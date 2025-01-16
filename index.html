@@ -3,79 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio của Tôi</title>
+    <title>Ger Inberg - Freelance Data Scientist</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
-        section {
-            margin: 20px;
+        .header h1 {
+            margin: 0;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .portfolio {
+            text-align: center;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
-            color: #333;
+        .portfolio h2 {
+            margin-top: 0;
         }
-        p {
-            line-height: 1.6;
+        .filters {
+            margin-bottom: 20px;
         }
-        .projects {
+        .filters button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        .filters button:hover {
+            background-color: #ddd;
+        }
+        .portfolio-items {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
         }
-        .project {
-            flex: 1 1 30%;
-            background-color: #eaeaea;
+        .portfolio-item {
             margin: 10px;
-            padding: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Portfolio của Tôi</h1>
-    </header>
-    <section>
-        <div class="container">
-            <h2>Giới Thiệu</h2>
-            <p>Xin chào! Tôi là [Tên của bạn], và đây là portfolio của tôi.</p>
+    <div class="header">
+        <h1>Ger Inberg</h1>
+        <p>freelance data scientist</p>
+    </div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">ShinyApps</a>
+        <a href="#">Training</a>
+        <a href="#">About</a>
+    </div>
+    <div class="portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="filters">
+            <button>Show all</button>
+            <button>data viz</button>
+            <button>machine learning</button>
+            <button>web development</button>
         </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>Dự Án</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Dự Án 1</h3>
-                    <p>Mô tả dự án 1 của bạn.</p>
-                </div>
-                <div class="project">
-                    <h3>Dự Án 2</h3>
-                    <p>Mô tả dự án 2 của bạn.</p>
-                </div>
-                <div class="project">
-                    <h3>Dự Án 3</h3>
-                    <p>Mô tả dự án 3 của bạn.</p>
-                </div>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="image1.jpg" alt="Data Visualization 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="image2.jpg" alt="Data Visualization 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="image3.jpg" alt="Data Visualization 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="image4.jpg" alt="Data Visualization 4">
+            </div>
+            <div class="portfolio-item">
+                <img src="image5.jpg" alt="Data Visualization 5">
+            </div>
+            <div class="portfolio-item">
+                <img src="image6.jpg" alt="Data Visualization 6">
+            </div>
+            <div class="portfolio-item">
+                <img src="image7.jpg" alt="Data Visualization 7">
+            </div>
+            <div class="portfolio-item">
+                <img src="image8.jpg" alt="Data Visualization 8">
             </div>
         </div>
-    </section>
+    </div>
 </body>
 </html>
-
